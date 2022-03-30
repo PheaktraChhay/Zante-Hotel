@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        body
+        {
+            font-family: Arial;
+            font-size: 8pt;
+        }
+    </style>
+    
+    
+
+    <link type="text/css" rel="Stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/start/jquery-ui.css" />
+    
+</head>
+<body>
+    From Date:
+    <input type="text" id="datepicker"/>
+    <input type="date">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+</body>
+<script type="text/javascript">
+    $(function () {
+        Date.prototype.ddmmyyyy = function () {
+            var dd = this.getDate().toString();
+            var mm = (this.getMonth() + 1).toString();
+            var yyyy = this.getFullYear().toString();
+            return (dd[1] ? dd : "0" + dd[0]) + "-" + (mm[1] ? mm : "0" + mm[0]) + "-" + yyyy;
+        };
+        $("#datepicker").datepicker({ dateFormat: "dd-mm-yy" });
+        $("#datepicker").on('change', function () {
+            var selectedDate = $(this).val();
+            var todaysDate = new Date().ddmmyyyy();
+            if (selectedDate < todaysDate) {
+                
+                $(this).val('');
+            }
+        });
+    });            
+</script>
+</html>

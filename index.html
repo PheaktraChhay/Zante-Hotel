@@ -20,13 +20,71 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/t.grid.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- google font  -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300;400;700;900&family=Varela+Round&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- sticky navigation bar -->
+    <nav class="fixed-top">
+        <div class="container-fluid">
+            <div class="sticky-nav-bg">
+                <div class="container sticky-nav-content">
+                    <div class="sticky-nav-logo float-start">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="sticky-nav-menu">
+                        <ul>
+                            <li><button type="button"><a href="#">home</a></button></li>
+                            <li>
+                                <div class="zen-dropdown">
+                                    <button type="button" class="zen-dropbtn">branches &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="zen-dropdown-content">
+                                        <a href="#">Zente Greece</a>
+                                        <a href="#">Zente Italy</a>
+                                        <a href="#">Zente UK</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="zen-dropdown">
+                                    <button type="button" class="zen-dropbtn">rooms &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="zen-dropdown-content">
+                                        <a href="#">Room List</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="zen-dropdown">
+                                    <button type="button" class="zen-dropbtn">pages &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="zen-dropdown-content">
+                                        <a href="#">Location</a>
+                                        <a href="#">Gallery</a>
+                                        <a href="#">Testimonials</a>
+                                        <a href="#">Contact US</a>
+                                        <a href="#">About Us</a>
+                                        <a href="#">Place</a>
+                                        <a href="#">Service</a>
+                                        <a href="#">Restautant</a>
+                                        <a href="#">Spa</a>
+                                        <a href="#">More Pages</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><button type="button"><a href="#">blog</a></button></li>
+                            <li><button type="button"><a href="#">contact us</a></button></li>
+                            <li><button type="button"><a href="#" class="sticky-nav-btn"><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;book online</a></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- back to top -->
+    <div class="back-to-top"><i class="fa-solid fa-arrow-up-long"></i></div>
     <!-- home -->
     <section id="home">
         <div class="conatiner-fluid">
@@ -195,36 +253,44 @@
             <div class="container">
                 <div class="gallery-container">
                     <div class="gallery-item h-2 w-6">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-01.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Navagio</strong>
-                        </div>
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-01.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Navagio</strong>
+                            </div>
+                        </a>
                     </div>
                     <div class="gallery-item w-6">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-02.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Zakynthos</strong>
-                        </div>
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-02.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Zakynthos</strong>
+                            </div>
+                        </a>
                     </div>
                     <div class="gallery-item w-3">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-03.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Santorini</strong>
-                        </div>
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-03.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Santorini</strong>
+                            </div>
+                        </a>
                     </div>
                     <div class="gallery-item w-3">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-04.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Acropolis</strong>
-                        </div>
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-04.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Acropolis</strong>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -422,17 +488,8 @@
     <footer>
         <section id="copyright">
             <div class="container-fluid">
-                <div class="footer-box">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p>© 2022 Hotel Zante. Designed by <span>Eagle-Themes</span></p>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i> English</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer-box text-center">
+                    <p>© 2022 Hotel Zante. Designed by <span>Eagle-Themes</span></p>
                 </div>
             </div>
         </section>

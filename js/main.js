@@ -1,4 +1,5 @@
 $(function(){
+    // Video
     var modal = document.getElementById("videoPreview");
     var btn = document.getElementById("playIcon");
     var vbg = document.getElementById("vBg");
@@ -16,4 +17,18 @@ $(function(){
             // location.reload();
         }
     }
+    // $(".sticky-nav-bg").css("background", "rgba(255,255,255,0)");
+    // Navigation
+    $(window).scroll(function(){
+        if($(this).scrollTop() > 100){
+            $(".sticky-nav-bg").css("background", "rgba(255,255,255,1)");
+        } else {
+            $(".sticky-nav-bg").css("background", "rgba(255,255,255,0.7)");
+        }
+    });
+    //Click event to scroll to top
+    $('.back-to-top').click(function(){
+        $('html, body').animate({scrollTop : 0},500);
+        return false;
+    });
 });

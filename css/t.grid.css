@@ -45,7 +45,7 @@
     background: linear-gradient(90deg, rgba(0,212,255,0.1) 0%, rgba(241,9,215,0.1) 100%);
 }
 .gallery-item:hover .gallery-item-image img {
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 /* .gallery-item:hover .gallery-item-title {
     backdrop-filter: blur(1px) saturate(50%) brightness(110%);

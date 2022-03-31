@@ -21,6 +21,7 @@
 .img-wrapper{
     overflow: hidden;
     position: relative;
+    /* height: 300px; */
 }
 .img-wrapper img{
     transform: scale(1.3);
@@ -39,7 +40,7 @@
     left: 0;
     cursor: pointer;
     background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,0.3) 0%, rgba(252,70,107,.03) 100%);
+    background: radial-gradient(circle, rgba(63,94,251,0.3) 0%, rgba(252,70,107,.03) 100%);
 }
 .price-title{
     position: absolute;

@@ -1,0 +1,27 @@
+<html>
+      <head>
+            <title></title>
+            <script language="JavaScript">
+        // Variables
+            leftposition=screen.width-350
+            strfiller0='<table border="1" cellspacing="0" width="98%"><tr><td><br>'+'Alert: '+'<br><hr width="98%"><br>'
+            strfiller1='&nbsp;&nbsp;&nbsp;&nbsp; This alert is a timed one.'+'<br><br><br></td></tr></table>'
+            temp=strfiller0+strfiller1
+        // Javascript
+            // This code belongs to Stephen Mayes Date: 25/07/2016 time:8:32 am
+
+
+            function preview(){
+                            preWindow= open("", "preWindow","status=no,toolbar=no,menubar=yes,width=350,height=180,left="+leftposition+",top=0");
+                            preWindow.document.open();
+                            preWindow.document.write(temp);
+                            preWindow.document.close();
+                    setTimeout(function(){preWindow.close()},4000); 
+            }
+
+             </script>
+      </head>
+<body>
+    <input type="button" value=" Open " onclick="preview()">
+</body>
+</html>

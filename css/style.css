@@ -10,8 +10,8 @@ body {
 |               General style
 ============================================*/
 h1, h2, h3, h4, h5, h6 {
-    text-transform: uppercase;
-    font-weight: 700;
+    /* text-transform: uppercase; */
+    /* font-weight: 700; */
     color: #606060;
 }
 .btn, .btn:hover, .btn:focus, .btn:active,

@@ -1,8 +1,9 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
+
 /* #content-title{
     margin-bottom: 40px;
     color: #555555;
@@ -12,15 +13,18 @@
     font-family: 'Fredoka One', cursive;
     font-size: 38px;
 } */
-.room, .event{
+.room,
+.event {
     position: relative;
 }
-.img-wrapper{
+
+.img-wrapper {
     overflow: hidden;
     position: relative;
     height: 240px;
 }
-.img-wrapper img{
+
+.img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -28,22 +32,25 @@
     transform: scale(1.3);
     transition: .5s ease;
 }
-.img-wrapper:hover img{
+
+.img-wrapper:hover img {
     transform: scale(1.3) translateX(10px);
     /* transform: scale(1.5)  */
     /* cursor: zoom-in; */
 }
-.img-overlay{
+
+.img-overlay {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     cursor: pointer;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,0.3) 0%, rgba(252,70,107,.03) 100%);
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 0.3) 0%, rgba(252, 70, 107, .03) 100%);
 }
-.price-title{
+
+.price-title {
     position: absolute;
     top: 10px;
     left: 10px;
@@ -59,35 +66,43 @@
     font-weight: 400;
     text-transform: uppercase;
 }
-.room-info, .event-title{
+
+.room-info,
+.event-title {
     border: 1px solid #dedede;
     padding: 10px;
     /* cursor: pointer; */
     margin-bottom: 30px;
 }
-.room-info h4{
+
+.room-info h4 {
     font-family: 'Varela Round', sans-serif;
     color: #555555;
 }
-.event-title{
+
+.event-title {
     padding: 30px;
     color: #555555;
 }
-.event-title h4{
+
+.event-title h4 {
     font-size: 20px;
     font-family: 'Fredoka One', cursive;
 }
-.event-title-footer{
+
+.event-title-footer {
     padding: 20px 0;
 }
-.event-title-footer a{
+
+.event-title-footer a {
     color: #969696;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Lato', sans-serif;
     font-size: 13px;
-    margin-right: 10px ;
+    margin-right: 10px;
 }
+
 /*==========ROOM-INFO==========*/
 .booking-price-bg {
     background-color: #F1F1F1;
@@ -222,6 +237,7 @@
     cursor: pointer;
     background: rgba(0, 0, 0, 0.2);
 }
+
 /*=======Services=======*/
 .room-review {
     display: table;
@@ -252,8 +268,9 @@
     border-left: 7px solid rgba(0, 0, 0, .2);
     padding: 8px 16px;
 }
+
 /* services */
-.service-item{
+.service-item {
     color: #858A99;
     border: 1px dashed #f1f1f1;
     width: 250px;
@@ -261,6 +278,7 @@
     padding: 8px;
 
 }
-.service-item i{
+
+.service-item i {
     margin-right: 8px;
 }

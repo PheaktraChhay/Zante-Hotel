@@ -3,16 +3,6 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
-
-/* #content-title{
-    margin-bottom: 40px;
-    color: #555555;
-}
-#content-title h4{
-    text-transform: uppercase;
-    font-family: 'Fredoka One', cursive;
-    font-size: 38px;
-} */
 .room,
 .event {
     position: relative;
@@ -35,8 +25,6 @@
 
 .img-wrapper:hover img {
     transform: scale(1.3) translateX(10px);
-    /* transform: scale(1.5)  */
-    /* cursor: zoom-in; */
 }
 
 .img-overlay {
@@ -55,23 +43,20 @@
     top: 10px;
     left: 10px;
     background: #fff;
-    color: #555555;
+    color: #E2C800;
     width: 90px;
-    /* padding: 5px 10px; */
     border-radius: 2px;
     text-align: center;
     height: 25px;
     justify-content: center;
     font-size: 15px;
-    font-weight: 400;
-    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .room-info,
 .event-title {
     border: 1px solid #dedede;
     padding: 10px;
-    /* cursor: pointer; */
     margin-bottom: 30px;
 }
 
@@ -238,6 +223,10 @@
     background: rgba(0, 0, 0, 0.2);
 }
 
+.desc ul li {
+    list-style: disc;
+}
+
 /*=======Services=======*/
 .room-review {
     display: table;
@@ -272,13 +261,29 @@
 /* services */
 .service-item {
     color: #858A99;
-    border: 1px dashed #f1f1f1;
+    border: 1px dashed #858A99;
     width: 250px;
     margin-top: 20px;
     padding: 8px;
-
 }
-
 .service-item i {
+    margin-right: 8px;
+}
+/* roomlist */
+.rinfo{
+    border: 1px solid #555;
+    /* background: #555; */
+    width: 100%;
+    height: 240px;
+    left: 0;
+}
+/* roomlist */
+.roomlist-item{
+    color: #858A99;
+    border: 1px dashed #858A99;
+    width: 100px;
+    height: 60px;
+    margin-top: 20px;
+    display: inline;
     margin-right: 8px;
 }

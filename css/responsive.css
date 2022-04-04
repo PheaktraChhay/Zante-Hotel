@@ -1,3 +1,40 @@
+.side-nav-menu-icon {
+    display: none;
+    font-size: 22px;
+}
 @media screen and (max-width: 991px) {
-    
+    .sticky-nav-menu {
+        display: none;
+    }
+    .side-nav-menu-icon {
+        display: block;
+    }
+    /* Home */
+    .home-content-title h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-width: 678px) {
+    /* Home */
+    .home-content-title h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-height:678px) {
+    /* Home */
+    .home-content-title h1 {
+        font-size: 60px;
+    }
+}
+@media screen and (max-height:480px) {
+    /* Home */
+    .home-content-title h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-height:320px) {
+    /* Home */
+    .home-content-title h1 {
+        font-size: 28px;
+    }
 }

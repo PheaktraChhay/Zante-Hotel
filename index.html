@@ -16,17 +16,125 @@
     <script src="https://code.iconify.design/2/2.2.0/iconify.min.js"></script>
     <!-- font awesome icon -->
     <script src="https://kit.fontawesome.com/2151697f2a.js" crossorigin="anonymous"></script>
+    <!-- date ranger picker css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- animation -->
+    <link rel="stylesheet" href="css/animate/animate-3.7.2.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/t.grid.css">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- google font  -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@300;400;700;900&family=Varela+Round&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <!-- sticky navigation bar -->
+    <nav class="fixed-top">
+        <div class="container-fluid">
+            <div class="sticky-nav-bg">
+                <div class="container sticky-nav-content">
+                    <div class="sticky-nav-logo float-start">
+                        <img src="images/logo.svg" alt="">
+                    </div>
+                    <div class="side-nav-menu-icon"><i class="fa-solid fa-bars"></i></div>
+                    <div class="sticky-nav-menu">
+                        <ul>
+                            <li><button type="button"><a href="#">home</a></button></li>
+                            <li>
+                                <div class="zen-dropdown">
+                                    <button type="button" class="zen-dropbtn">branches &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="zen-dropdown-content">
+                                        <a href="#">Zante Greece</a>
+                                        <a href="#">Zante Italy</a>
+                                        <a href="#">Zante UK</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="zen-dropdown">
+                                    <button type="button" class="zen-dropbtn">rooms &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="zen-dropdown-content">
+                                        <a href="#">Room List</a>
+                                        <a href="#">Link 2</a>
+                                        <a href="#">Link 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="zen-dropdown">
+                                    <button type="button" class="zen-dropbtn">pages &nbsp;&nbsp;<i class="fa-solid fa-angle-down"></i></button>
+                                    <div class="zen-dropdown-content">
+                                        <a href="#">Location</a>
+                                        <a href="#">Gallery</a>
+                                        <a href="#">Testimonials</a>
+                                        <a href="#">Contact US</a>
+                                        <a href="#">About Us</a>
+                                        <a href="#">Place</a>
+                                        <a href="#">Service</a>
+                                        <a href="#">Restaurant</a>
+                                        <a href="#">Spa</a>
+                                        <a href="#">More Pages</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><button type="button"><a href="#">blog</a></button></li>
+                            <li><button type="button"><a href="#">contact us</a></button></li>
+                            <li><button type="button"><a href="#" class="sticky-nav-btn"><i class="fa-solid fa-calendar-days"></i>&nbsp;&nbsp;book online</a></button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- tablet mobile menu -->
+    <div class="side-nav-bg"></div>
+    <div class="sidenav">
+        <a href="#" class="close-btn" style="text-align: right; padding: 15px 30px; cursor: pointer;">
+            <i class="fa-solid fa-xmark"></i>
+        </a>
+        <a href="#">Home</a>
+        <button class="dropdown-btn">branches
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Zante Greece</a>
+            <a href="#">Zante Italy</a>
+            <a href="#">Zante UK</a>
+        </div>
+        <button class="dropdown-btn">rooms
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Room List</a>
+            <a href="#">Room List</a>
+            <a href="#">Room List</a>
+        </div>
+        <button class="dropdown-btn">pages
+            <i class="fa-solid fa-angle-down"></i>
+        </button>
+        <div class="dropdown-container">
+            <a href="#">Location</a>
+            <a href="#">Gallery</a>
+            <a href="#">Testimonials</a>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Place</a>
+            <a href="#">Service</a>
+            <a href="#">Restaurant</a>
+            <a href="#">Spa</a>
+            <a href="#">More Pages</a>
+        </div>
+        <a href="#">blog</a>
+        <a href="#">contact us</a>
+        <a href="#" class="sticky-nav-btn">
+            <i class="fa-solid fa-calendar-days"></i>
+            &nbsp;&nbsp;book online
+        </a>
+    </div>
+    <!-- back to top -->
+    <div class="back-to-top"><a href="#home"><i class="fa-solid fa-arrow-up-long"></i></a></div>
     <!-- home -->
     <section id="home">
         <div class="conatiner-fluid">
@@ -37,27 +145,50 @@
             </div>
             <div class="container">
                 <div class="home-content-title">
-                    <h1>welcome to <span>zante</span></h1>
+                    <h1 class="wow animated fadeInDown" data-wow-duration=".5s" data-wow-delay=".5s">welcome to <span>zante</span></h1>
                 </div>
             </div>
         </div>
     </section>
     <!-- check available -->
     <section id="checka">
-        <div class="container-flui">
+        <div class="container-fluid">
             <div class="checking-a">
                 <div class="checka-content-box">
+                    <!-- <input type="text" name="" id="daterange"> -->
+                    <!-- <p id="demo"></p> -->
                     <div class="container">
                         <div class="row">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control rounded-0" placeholder="dd-mm-yy">
+                            <div class="col-lg-4">
+                                <input type="button"  class="form-control rounded-0 text-start" id="daterange">
+                                <!-- <input type="date" id="dateInput" class="form-control rounded-0"> -->
                             </div>
-                            <div class="col-md-4">
-                                <input type="text" class="form-control rounded-0" placeholder="Guest">
+                            <div class="col-lg-4">
+                                <input type="button" class="form-control rounded-0 text-start" id="addGuestBtn" value="Guest - 1">
+                                <div class="guest-member-content">
+                                    <span></span>
+                                    <div class="guest-title">
+                                        <div class="d-flex justify-content-between mb-3">
+                                            <div><b>Adults</b><br>Ages 18+</div>
+                                            <div class="guest-add-content">
+                                                <button id="subGuestNum">-</button>
+                                                <strong>1</strong>
+                                                <button id="addGuestNum">+</button>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex justify-content-between">
+                                            <div><b>Children</b><br>Ages 4 - 18</div>
+                                            <div class="guest-add-content">
+                                                <button id="subGuestNum">-</button>
+                                                <strong>0</strong>
+                                                <button id="addGuestNum">+</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-4">
-                                <input type="button" class="btn btn-light-blue form-control rounded-0"
-                                    value="CHECK AVIALABLITY">
+                            <div class="col-lg-4">
+                                <input type="button" class="btn btn-light-blue form-control rounded-0" value="CHECK AVIALABLITY">
                             </div>
                         </div>
                     </div>
@@ -74,7 +205,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-xl-4 col-lg-6 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <div id="room1">
                             <a href="room.html">
                                 <div class="room">
@@ -92,7 +223,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-xl-4 col-lg-6 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <div id="room2">
                             <a href="room2.html">
                                 <div class="room">
@@ -110,7 +241,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-xl-4 col-lg-6 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <div id="room3">
                             <a href="room3.html">
                                 <div class="room">
@@ -128,7 +259,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-xl-4 col-lg-6 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <div id="room4">
                             <a href="#">
                                 <div class="room">
@@ -146,7 +277,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-xl-4 col-lg-6 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <div id="room5">
                             <a href="#">
                                 <div class="room">
@@ -164,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-6 col-md-12">
+                    <div class="col-xl-4 col-lg-6 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <div id="room6">
                             <a href="#">
                                 <div class="room">
@@ -194,37 +325,45 @@
             </div>
             <div class="container">
                 <div class="gallery-container">
-                    <div class="gallery-item h-2 w-6">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-01.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Navagio</strong>
-                        </div>
+                    <div class="gallery-item h-2 w-6 wow animated bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-01.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Navagio</strong>
+                            </div>
+                        </a>
                     </div>
-                    <div class="gallery-item w-6">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-02.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Zakynthos</strong>
-                        </div>
+                    <div class="gallery-item w-6 wow animated bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-02.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Zakynthos</strong>
+                            </div>
+                        </a>
                     </div>
-                    <div class="gallery-item w-3">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-03.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Santorini</strong>
-                        </div>
+                    <div class="gallery-item w-3 wow animated bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-03.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Santorini</strong>
+                            </div>
+                        </a>
                     </div>
-                    <div class="gallery-item w-3">
-                        <div class="gallery-item-image">
-                            <img src="images/discover/discover-04.jpg">
-                        </div>
-                        <div class="gallery-item-title">
-                            <strong>Acropolis</strong>
-                        </div>
+                    <div class="gallery-item w-3 wow animated bounceIn" data-wow-duration="1s" data-wow-delay=".5s">
+                        <a href="#">
+                            <div class="gallery-item-image">
+                                <img src="images/discover/discover-04.jpg">
+                            </div>
+                            <div class="gallery-item-title">
+                                <strong>Acropolis</strong>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -253,7 +392,7 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <a href="#">
                             <div class="event">
                                 <div class="img-wrapper">
@@ -279,7 +418,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <a href="#">
                             <div class="event">
                                 <div class="img-wrapper">
@@ -305,7 +444,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-12">
+                    <div class="col-lg-4 col-md-12 wow animated fadeInUp" data-wow-duration="1s" data-wow-delay=".5s">
                         <a href="#">
                             <div class="event">
                                 <div class="img-wrapper">
@@ -337,7 +476,7 @@
     </section>
     <!-- map -->
     <section id="map">
-        <div class="content-box">
+        <div class="content-box wow animated fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
             <div class="mapouter">
                 <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
                         marginheight="0" marginwidth="0"
@@ -422,17 +561,8 @@
     <footer>
         <section id="copyright">
             <div class="container-fluid">
-                <div class="footer-box">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <p>© 2022 Hotel Zante. Designed by <span>Eagle-Themes</span></p>
-                            </div>
-                            <div class="col-lg-6 text-end">
-                                <a href="#"><i class="fa-solid fa-earth-americas"></i> English</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="footer-box text-center">
+                    <p>© 2022 Hotel Zante. Designed by <span>Eagle-Themes</span></p>
                 </div>
             </div>
         </section>
@@ -442,8 +572,15 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <!-- custom js -->
+    <!-- date range picker -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- wow js -->
+    <script src="js/wow-js/wow.min.js"></script>
+
+        <!-- custom js -->
     <script src="js/main.js"></script>
+    
 </body>
 
 </html>

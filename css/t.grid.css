@@ -19,7 +19,7 @@
     height: 100%;
     object-fit: cover;
     object-position: 0 0;
-    transition: .3s ease-in-out;
+    transition: .5s ease;
 }
 .h-2 {
     grid-row: span 2;
@@ -50,3 +50,12 @@
 /* .gallery-item:hover .gallery-item-title {
     backdrop-filter: blur(1px) saturate(50%) brightness(110%);
 } */
+
+@media screen and (max-width: 991px) {
+    .w-3 {
+        grid-column: span 12;
+    }
+    .w-6 {
+        grid-column: span 12;
+    }
+}
